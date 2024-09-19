@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkSphere X Hackathon</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        body {
+            background-color: #f0eeee;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+
+        .box {
+            max-width: 1300px;
+            height: 300px;
+            background-image:linear-gradient(45deg,#006c9a,#038dd2,#01a9fd,#84d6ff);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            position: relative; /* Make .box relative for absolute positioning inside */
+            bottom: 50px;
+        }
+
+        .text-container {
+            position: absolute;
+            top: 50%; /* Position text in the center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Adjust positioning based on the width and height */
+            text-align: center; /* Center text */
+        }
+
+        h1, h2, h3, h4 {
+            font-size: 3em;
+            font-weight: bold;
+            color: white;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        h2{
+         font-size: 5em;
+         color: black;
+         position:relative;
+         top:100px;
+        }
+            
+        h3{
+            font-size: 5em;
+            color: rgb(255, 255, 255);
+            position: relative;
+            text-align: center;
+            
+        }
+
+        h4{
+            font-size: 5em;
+            color: rgb(255, 255, 255);
+            position: relative;
+            text-align:center;
+
+        }
+
+        h1 {
+         font-size: 5em;
+         color: black;
+         position:relative;
+         top:100px;
+        }
+
+        .box2 {
+            width: 800px;
+            height: 250px;
+            background-color: #f3f0f0;
+            border-radius: 10px;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            position: relative;
+            bottom: 40px;
+        }
+        .box3{
+            width: 800px;
+            height: 250px;
+            background-color: #f3f0f0;
+            border-radius: 10px;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            position: relative;
+            top:-25px;
+        }
+        .box4{
+            width: 800px;
+            height: 250px;
+            background-color: #f3f0f0;
+            border-radius: 10px;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            position: relative;
+            top:-25px;
+        }
+
+        .box5{
+            width: 800px;
+            height: 500px;
+            background-color: #f3f0f0;
+            border-radius: 10px;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            position: relative;
+            top:-25px;
+        }
+
+        .box6{
+            width: 800px;
+            height: 250px;
+            background-color: #f3f0f0;
+            border-radius: 10px;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            position: relative;
+            top:-25px;
+        }
+
+        .box7{
+            width: 800px;
+            height: 250px;
+            background-color: #f3f0f0;
+            border-radius: 10px;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            position: relative;
+            top:-25px;
+        }
+
+        .box8{
+            width: 1250px;
+            height: 90px;
+            background-color: #1f1f1f;
+            margin: -10px;
+            position: relative;
+            left:20px;
+            top:-10px;
+        }
+        h5{
+            font-size: 2.8em;
+            color: #006c9a;
+            position: relative;
+            text-align: center;
+            top:50px;
+        }
+
+        h6{
+            font-size: 2.8em;
+            color: #006c9a;
+            position: relative;
+            text-align:center;
+            top:50px;
+        }
+
+        pre{
+            font-size: 2.8em;
+            font-weight: bolder;
+            color: #006c9a;
+            position: relative;
+            text-align:center;
+            bottom:-15px;
+        }
+
+        .pre1{
+            font-size: 2.8em;
+            font-weight: bolder;
+            color: #006c9a;
+            position: relative;
+            text-align:center;
+            bottom:-30px;
+        }
+
+        .pre2{
+            font-size: 2.8em;
+            font-weight: bolder;
+            color: #006c9a;
+            position: relative;
+            text-align:center;
+            bottom:-50px;
+        }
+        
+
+        p{
+            font-size: 1.5em;
+            color: black;
+            position:relative;
+            top:80px;
+            text-align: center;
+        }
+
+        strong{
+            font-weight: bold; 
+        }
+
+        table {
+            border-collapse: collapse;
+            position: relative;
+            left:50px;
+            top:50px;
+            width:700px;
+            height:360px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        tbody{
+            text-align:center;
+        }
+        .p1{
+            font-size: 1em;
+            position:relative;
+            margin-top:-33px;
+           
+        }
+
+        .p2{
+            font-size: 1em;
+            position:relative;
+            margin-top:0px;
+           
+        }
+
+        .p3{
+           font-size: 1.2em;
+           position:absolute;
+           color:white;
+           bottom:300px;
+           left:150px;
+           margin:-4%;
+        }
+
+        .email{
+            font-size: 1em;
+            position:relative;
+            text-align: center;
+            bottom:1000px;
+        }
+
+        img{
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            position:relative;
+            top:25px;
+            left:325px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="text-container">
+             
+            <h3>SparkSphere</h3>
+            <h4>Hackathon</h4>
+           
+        </div>
+    </div>
+
+    <div class="box2">
+        <h5>When & Where</h5>
+        <p> 
+         <strong>Date: </strong>
+            "November 04, 2024"
+        </p>
+         <p>
+            <strong>Location: </strong>
+                "Brambleton Library, Brambleton, Virginia"
+         </p>   
+
+    </div>
+
+    <div class="box3">
+        <h6> Registeration</h6>
+        <p> Sign up by pressing the button</p>
+        <button class="btn" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeZ1HAgkG9_308PDFZoLBMyeIA6z9X9pitlM0MyNyugwWh9iA/viewform'" target="_blank" rel="noopener">Form</button>
+
+
+    </div>
+
+    <div class="box4">
+        <pre class="pre1">About SparkSphere Hackathon</pre>
+        <p class="p1">We're a team of high school students organizing an in-person hackathon 
+            for fellow high schoolers. 
+            
+            Come be a part of an exciting day filled with coding and creativity! 
+            
+            This hackathon is open to high school students, and we welcome participants of all skill levels, from beginners to seasoned coders.
+            
+            Best of all, the event is completely free! We'll also provide lunch and snacks to keep you fueled throughout the day. Just bring your laptop and charger!
+            
+            Don't miss this amazing chance to innovate and collaborate.</p>
+    </div>
+
+    <div class="box5">
+        <pre>Event Schedule</pre>
+        <table>
+            <thead>
+                <tr bgcolor="sky blue">
+                    <th>Time</th>
+                    <th>Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr bgcolor="white">
+                    <td bg>10:00 AM</td>
+                    <td>Registration</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td>10:30 AM</td>
+                    <td>Welcome</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td>10:45 AM</td>
+                    <td>Hackathon Begins</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td>1-1:45 PM</td>
+                    <td>Lunch Break</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td>6:00 PM</td>
+                    <td>Presentations/Judging</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td>7:00 PM</td>
+                    <td>Awards</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <!--<div class="box6">
+        <pre >Our Partners</pre>
+        <img src="Hack.png" alt="Partner 1">
+    </div>-->
+
+    <div class="box7">
+        <pre class="pre2" >Contact us</pre>
+        <p class="p2">If you have any questions or need more information, email us!</p>
+        <p class="email"> Email:<a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfpsJBNfSmXFxbzTFVhNJPvsWsVhsMHTsBcrBPklVphpHNqGNwhmXRMPkKwkqsDLBqWZVB"><span class="__cf_email__" data-cfemail="c7a4a8a9b3a6a4b387a6aba2bfafa6bfe9b5a8a4acb4">sparksphere23@gmail.com</span></a> </p>
+    </div>
+
+    <div class="box8">
+        <p class="p3">Sparksphere is fiscally sponsored by The Hack Foundation (d.b.a. Hack Club), a 501(c)(3) nonprofit (EIN: 81-2908499).</p>
+    </div>
+
+    
+</body>
+</html>
