@@ -20,44 +20,22 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Glow effect 
-.btn::before {
-    content: "";
-    background: linear-gradient(45deg, #98a416, #edff26, #f4ff76);
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-size: 600%;
-    z-index: -1;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    filter: blur(3px);
-    animation: glowing 20s linear infinite;
-    transition: opacity 0.3s ease-in-out;
-    border-radius: 10px;
-    opacity: 0;
+.btn2 {
+    width: 85px;
+    position: relative;
+    left: 365px;
+    top: 100px;
+    transform: scale(2.6);
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    z-index: 0;
+    border-radius: 3px;
+    background-image:linear-gradient(45deg,#006c9a,#038dd2,#01a9fd,#75c0e5);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
 
-/* Hover state 
-.btn:hover {
-    background-color: transparent;  
-}
 
-.btn:hover::before {
-    opacity: 1;
-}
 
-.btn:active::after {
-    background: transparent;
-}
-
-.btn:active {
-    color: #fff;
-} 
 
