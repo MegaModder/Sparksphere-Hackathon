@@ -134,14 +134,26 @@
             position: relative;
             top:-25px;
         }
+        
 
-        .box8{
-            width: 1250px;
+       .box8 {
+         width: 100%; /* Set to 100% to avoid bottom scrolling */
             height: 90px;
             background-color: #1f1f1f;
-            margin: -10px;
+            margin: -10px auto; /* Center the box */
             position: relative;
-            left:20px;
+            left: 0; /* Reset any horizontal positioning */
+            top: -10px;
+            overflow-x: hidden; /* Hide any horizontal overflow */
+}
+        .box9{
+            width: 800px;
+            height: 250px;
+            background-color: #f3f0f0;
+            border-radius: 10px;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            position: relative;
             top:-10px;
         }
         h5{
@@ -285,7 +297,7 @@
     <div class="box3">
         <h6> Registeration</h6>
         <p> Sign up by pressing the button</p>
-        <button class="btn" onclick="location.href='https://forms.gle/jyqWrD4fUmrWd2mQ6'" target="_blank" rel="noopener">Form</button>
+        <button class="btn" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeZ1HAgkG9_308PDFZoLBMyeIA6z9X9pitlM0MyNyugwWh9iA/viewform'" target="_blank" rel="noopener">Form</button>
 
 
     </div>
@@ -343,20 +355,25 @@
 
     </div>
 
-    <!--<div class="box6">
+    <div class="box6">
         <pre >Our Partners</pre>
         <img src="Hack.png" alt="Partner 1">
-    </div>-->
+    </div>
 
     <div class="box7">
         <pre class="pre2" >Contact us</pre>
         <p class="p2">If you have any questions or need more information, email us!</p>
         <p class="email"> Email:<a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfpsJBNfSmXFxbzTFVhNJPvsWsVhsMHTsBcrBPklVphpHNqGNwhmXRMPkKwkqsDLBqWZVB"><span class="__cf_email__" data-cfemail="c7a4a8a9b3a6a4b387a6aba2bfafa6bfe9b5a8a4acb4">sparksphere23@gmail.com</span></a> </p>
     </div>
-
+    <div class="box9">
+        <pre class="pre3">Project Submission</pre>
+        <button class="btn2" onclick="location.href='https:'" target="_blank" rel="noopener">Submission</button>
+    </div>
     <div class="box8">
         <p class="p3">Sparksphere is fiscally sponsored by The Hack Foundation (d.b.a. Hack Club), a 501(c)(3) nonprofit (EIN: 81-2908499).</p>
     </div>
+
+    
 
     
 </body>
